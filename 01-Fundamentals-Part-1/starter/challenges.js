@@ -13,7 +13,7 @@ Test data:
 § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 
 m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
-//For Data 2 just change values
+//For Data 2 just change values*/
 
 const massMark = 78;
 const heightMark = 1.69;
@@ -30,8 +30,16 @@ console.log(BMIJohn);
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(markHigherBMI);//true
 
+//CODING CHALLENGE #2
 
-// Taking Decisions: if / else Statements
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI of ${BMIMark} is higher than John's BMI of ${BMIJohn}`);
+} else {
+  console.log (`John's BMI of ${BMIJohn} is higher than Mark's BMI of ${BMIMark}`);
+}
+
+
+/* Taking Decisions: if / else Statements
 const age = 15;
 
 if (age >= 18) {
@@ -51,3 +59,6 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 */
+
+
+
