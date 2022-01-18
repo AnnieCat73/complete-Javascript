@@ -13,7 +13,7 @@ Test data:
 § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 
 m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
-//For Data 2 just change values*/
+//For Data 2 just change values
 
 const massMark = 78;
 const heightMark = 1.69;
@@ -36,6 +36,37 @@ if (BMIMark > BMIJohn) {
   console.log(`Mark's BMI of ${BMIMark} is higher than John's BMI of ${BMIJohn}`);
 } else {
   console.log (`John's BMI of ${BMIJohn} is higher than Mark's BMI of ${BMIMark}`);
+}*/
+
+
+//CODING CHALLENGE #3
+
+//1
+const dolphinsAvgScore = (96, 108, 89) / 3;
+const koalasAvgScore = (88, 91, 110) / 3;
+//console.log(dolphinsAvgScore, koalasAvgScore);
+
+
+//2
+if (dolphinsAvgScore > koalasAvgScore) {
+  console.log(`Dolphins is the winner!`);
+} else if (koalasAvgScore > dolphinsAvgScore) {
+  console.log(`The Koalas got it!`);
+} else if (koalasAvgScore === dolphinsAvgScore) {
+  console.log(`It's a tie!`);
+}
+
+//3
+const minScore = 100;
+const dolphinBonusScore1 = (97, 112, 101) / 3;
+const koalasBonusScore1 = (109, 95, 123) / 3;
+
+if (dolphinBonusScore1 > koalasBonusScore1 && dolphinBonusScore1 >= minScore) {
+  console.log(`Dolphins are the winners!`);
+} else if (koalasBonusScore1 > dolphinBonusScore1 && koalasBonusScore1 >= minScore) {
+  console.log(`Koalas are the winners!`)
+} else {
+  console.log(`No team wins!`);
 }
 
 
