@@ -24,5 +24,12 @@ const countriesContainer = document.querySelector('.countries');
 - In our code we will be able to handle these different states, ie
 fulfilled/rejected*/
 
-const request = fetch(`https://restcountries.com/v3.1/name/portugal`);
-console.log(request)
+/*const request = fetch(`https://restcountries.com/v3.1/name/portugal`);
+console.log(request)*/
+
+const getCountryData = function(country) {
+  fetch(`https://restcountries.com/v3.1/name/${country}`).then(function (response){//handle fulfilled promise
+    console.log(response);
+  })
+};
+getCountryData('portugal');
